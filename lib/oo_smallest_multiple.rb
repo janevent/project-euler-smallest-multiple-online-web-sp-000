@@ -1,10 +1,11 @@
 # Implement your object-oriented solution here!
 class SmallestMultiple
   
-  attr_accessor :count
+  attr_accessor :count, :lcm
   
   def initialize(count)
     @count = count
+    @lcm = self.smallest_multiple
   end
   
   def check_if_evenly_divisible(number)
