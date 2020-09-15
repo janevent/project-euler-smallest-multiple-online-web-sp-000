@@ -18,4 +18,19 @@ class SmallestMultiple
     end
     return evenly
   end
+  
+  def smallest_multiple 
+    start = 2 
+    if self.count >=20 
+      start = 200000000
+    end 
+    while start < 300000000 
+      if self.check_if_evenly_divisible(start) 
+        return start 
+      else 
+        start+=1 
+      end
+    end
+    return "not found"
+  end
 end
