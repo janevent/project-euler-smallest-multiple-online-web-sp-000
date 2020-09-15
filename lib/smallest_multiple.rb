@@ -20,7 +20,7 @@ end
 def smallest_multiple(count)
   start = 2
   if count >= 20 
-    start = 2521 
+    start = 200000000 
   end
   while start < 300000000 
     if check_if_evenly_divisible(start, count)
